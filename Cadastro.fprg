@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-25 04:52:27 "/>
+        <attribute name="created" value="QWx1bm87IERTTjkxNC1NSUNSTzI4LTsgMjAyNS0wMi0yNTsgMDQ6MTI6NDQgOyAyNjg4"/>
+        <attribute name="edited" value="QWx1bm87IERTTjkxNC1NSUNSTzI4LTsgMjAyNS0wMi0yNTsgMDQ6NTI6MjcgOyAyNjkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Email" type="String" array="False" size=""/>
+            <input variable="Email"/>
+            <output expression="&quot;Informe sua idade&quot;"/>
+            <declare name="Idade" type="Integer" array="False" size=""/>
+            <input variable="Idade"/>
+            <if expression="Idade &lt; 18">
+                <then>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <output expression="&quot;Fale sua senha&quot;"/>
+                </else>
+            </if>
+            <declare name="Senha" type="String" array="False" size=""/>
+            <input variable="Senha"/>
+            <if expression="len (Senha) &lt; 8">
+                <then>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <output expression="&quot;Cadastro concluido&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
